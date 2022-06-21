@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <form method="POST" asp-action="register">
+        <br>
+        <label for="name">First Name</label><br>
+        <input type="text" id="name" name="name"><br>
+        <br>
+        <label for="surname">Last Name</label><br>
+        <input type="text" id="surname" name="surname"><br>
+        <br>
+        <label for="email">E-Mail</label><br>
+        <input type="text" id="email" name="email"><br>
+
+        <fieldset><br>
+            Job <select id="job" name="job">
+                <option value="NA">NA</option>
+
+                   <option value="Teacher">Teacher</option>
+
+                   <option value="Student">Student</option>
+
+            </select>
+        </fieldset><br>
+
+        <label for="password">Password</label><br>
+        <input type="text" id="password" name="password"><br>
+  
+        <br>
+        <label for="cpsw">Confirm Password</label><br>
+        <input type="text" id="cpsw" name="cpsw"><br>
+
+
+       
+
+
+
+
+        <br>
+
+        <input type="submit" value="Submit" />
+
+    </form>
+
+
+</div>
